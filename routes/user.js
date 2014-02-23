@@ -24,7 +24,7 @@ exports.checkLogin = function(req, res){
     else{
       console.log('user: correct pw');
       //res.send('/html/main.html');
-      res.send('http://lab777.herokuapp.com');
+      res.send('/html/main.html');
       //res.redirect('/html/main.html');
     }
 
@@ -52,6 +52,6 @@ exports.addUser = function(req, res) {
 
   function afterSaving(err){
     if (err){console.log(err); res.send(500);}
-    res.send('http://lab777.herokuapp.com');
+    res.send('/html/main.html');
   }
 }
